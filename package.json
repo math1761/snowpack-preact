@@ -1,0 +1,28 @@
+{
+  "scripts": {
+    "start": "snowpack dev",
+    "start:secure": "snowpack dev --secure",
+    "build": "snowpack build --verbose && workbox generateSW workbox-config.js",
+    "build:watch": "snowpack build --watch",
+    "test": "jest",
+    "format": "prettier --write \"src/**/*.{js,jsx,tsx}\"",
+    "lint": "prettier --check \"src/**/*.{js,jsx,tsx}\"",
+    "certificate": "npx devcert-cli generate localhost && mkcert -install && mkcert -key-file snowpack.key -cert-file snowpack.crt localhost"
+  },
+  "dependencies": {
+    "@snowpack/plugin-webpack": "^2.0.5",
+    "preact": "^10.4.6"
+  },
+  "devDependencies": {
+    "@snowpack/app-scripts-preact": "^1.8.5",
+    "@snowpack/plugin-babel": "^2.1.0",
+    "@snowpack/plugin-run-script": "^2.1.1",
+    "@testing-library/jest-dom": "^5.5.0",
+    "@testing-library/preact": "^1.0.2",
+    "jest": "^26.2.2",
+    "prettier": "^2.0.5",
+    "snowpack": "^2.9.0",
+    "typescript": "^4.0.2",
+    "watch": "^1.0.2"
+  }
+}

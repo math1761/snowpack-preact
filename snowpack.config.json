@@ -1,0 +1,31 @@
+{
+  "extends": "@snowpack/app-scripts-preact",
+  "plugins": [
+    [
+      "@snowpack/plugin-run-script",
+      {
+        "cmd": "tsc --noEmit",
+        "watch": "$1 --watch"
+      },
+      {
+        "cmd": "postcss",
+        "input": [
+          ".css"
+        ],
+        "output": [
+          ".css"
+        ]
+      },
+      {
+        "cmd": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
+        "watch": "watch \"$1\" src"
+      },
+      "@snowpack/plugin-babel",
+      "@snowpack/plugin-webpack"
+    ]
+  ],
+  "alias": {
+    "react": "preact/compat",
+    "react-dom": "preact/compat"
+  }
+}
