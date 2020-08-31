@@ -7,7 +7,7 @@
     "test": "jest",
     "format": "prettier --write \"src/**/*.{js,jsx,tsx}\"",
     "lint": "prettier --check \"src/**/*.{js,jsx,tsx}\"",
-    "certificate": "npx devcert-cli generate localhost && mkcert -install && mkcert -key-file snowpack.key -cert-file snowpack.crt localhost"
+    "certificate": "npx devcert-cli generate localhost && mkcert -install && mkcert -key-file snowpack.key -cert-file snowpack.crt localhost && rm -rf ./localhost.cert && rm -rf localhost.key"
   },
   "dependencies": {
     "@snowpack/plugin-webpack": "^2.0.5",
