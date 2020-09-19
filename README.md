@@ -1,6 +1,4 @@
-# New Project
-
-> ✨ Bootstrapped with Create Snowpack App (CSA).
+# Snowpack-preact starter with typescript
 
 ## Available Scripts
 

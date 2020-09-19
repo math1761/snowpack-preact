@@ -10,19 +10,19 @@
     "certificate": "npx devcert-cli generate localhost && mkcert -install && mkcert -key-file snowpack.key -cert-file snowpack.crt localhost && rm -rf ./localhost.cert && rm -rf localhost.key"
   },
   "dependencies": {
-    "@snowpack/plugin-webpack": "^2.0.5",
-    "preact": "^10.4.6"
+    "preact": "^10.4.8"
   },
   "devDependencies": {
-    "@snowpack/app-scripts-preact": "^1.8.5",
+    "@snowpack/app-scripts-preact": "^1.8.8",
     "@snowpack/plugin-babel": "^2.1.0",
-    "@snowpack/plugin-run-script": "^2.1.1",
-    "@testing-library/jest-dom": "^5.5.0",
-    "@testing-library/preact": "^1.0.2",
-    "jest": "^26.2.2",
-    "prettier": "^2.0.5",
-    "snowpack": "^2.9.0",
-    "typescript": "^4.0.2",
+    "@snowpack/plugin-run-script": "^2.1.2",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/preact": "^2.0.0",
+    "@snowpack/plugin-webpack": "^2.0.12",
+    "jest": "^26.4.2",
+    "prettier": "^2.1.2",
+    "snowpack": "^2.11.1",
+    "typescript": "^4.0.3",
     "watch": "^1.0.2"
   }
 }
